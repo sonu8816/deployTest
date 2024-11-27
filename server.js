@@ -1,7 +1,10 @@
 const express= require('express');
 const app = express();
 app.get('/',(req,res)=>{
-    res.send('Hello World!');
+    res.json({
+        name:'sonu',
+        age:20
+    })
 })
 
 app.get('/sonu',(req,res)=>{
