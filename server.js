@@ -4,6 +4,13 @@ app.get('/',(req,res)=>{
     res.send('Hello World!');
 })
 
+app.get('/sonu',(req,res)=>{
+    res.json({
+        name:'sonu',
+        age:20
+    })
+})
+
 app.listen(3000,()=>{
     console.log('server is running on port 3000');
 })
